@@ -1,0 +1,1 @@
+# bsc-squash
