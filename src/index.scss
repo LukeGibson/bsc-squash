@@ -11,6 +11,9 @@ $color-white: #ffffff;
 
 * {
   margin: 0;
+}
+
+body {
   font-family: "Quicksand";
 }
 
@@ -33,11 +36,11 @@ $color-white: #ffffff;
   padding: 40px;
   text-align: center;
 }
-.segment-even {
+.segment-odd {
   background-color: $color-dark-gray;
   color: $color-white;
 }
-.segment-odd {
+.segment-even {
   background-color: $color-mid-gray;
   color: $color-white;
 }
@@ -88,4 +91,35 @@ $color-white: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* banner styles */
+
+.banner {
+  padding: 100px 60px;
+  background-color: $color-dark-gray;
+  color: $color-white;
+  display: flex;
+}
+.banner-container {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.banner-text {
+  font-size: 5em;
+  font-family: sans-serif;
+  font-style: italic; 
+  font-weight: bold;
+  display: inline-block;
+  text-align: left;
+}
+.banner-image {
+  display: inline-block;
+  margin-right: 20px;
+}
+.banner-image img {
+  max-width: 350px;
+  height:auto;
 }
