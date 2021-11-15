@@ -1,3 +1,4 @@
+import React from 'react';
 import Segment from './Segment';
 
 const Home = () => {
@@ -8,6 +9,6 @@ const Home = () => {
       <Segment segmentIndex={2} title='On Court Action' />
     </div>
   );
-}
- 
+};
+
 export default Home;

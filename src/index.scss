@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-$color-accent: #ff6347ee;
+$color-accent: #fa593cee;
 $color-black: #181818;
 $color-dark-gray: #444444;
 $color-mid-gray: #555555;
@@ -14,15 +14,10 @@ $color-white: #ffffff;
   font-family: "Quicksand";
 }
 
-html body {
-  height: 100%;
-}
-
 /* app styles */
 
 .content {
   text-align: center;
-  background-color: $color-white;
   min-height: calc(100vh - 130px);
 }
 
@@ -31,11 +26,10 @@ html body {
   margin: auto;
 }
 
-
 /* segment styles */
 
 .segment {
-  margin:auto;
+  margin: auto;
   padding: 40px;
   text-align: center;
 }
@@ -48,17 +42,22 @@ html body {
   color: $color-white;
 }
 
-
 /* navbar styles */
 
 .navbar {
   padding: 20px;
-  display: flex;
-  align-items: center;
+  margin: auto;
   background-color: $color-accent;
 }
+.nav-container {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .navbar .links {
-  margin-left: auto;
+  display: inline;
 }
 .navbar .links a {
   margin-left: 16px;
@@ -66,22 +65,27 @@ html body {
   padding: 6px;
   color:$color-white;
 }
-.navbar a:hover {
-  color: $color-dark-gray;
-}
 .navbar .home-link {
   text-decoration: none;
   color: $color-white;
   font-size: x-large;
   font-weight: bold;
 }
+.navbar a:hover {
+  color: $color-dark-gray;
+}
 
 /* footer styles */
 
 .footer {
-  display: flex;
-  padding: 20px;
   background-color: $color-black;
   color: $color-light-gray;
+}
+.footer-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
